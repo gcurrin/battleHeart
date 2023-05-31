@@ -5,27 +5,34 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "newClass", menuName = "ScriptableObjects/newClass")]
 public class UnitClass : ScriptableObject
 {
+    
     public string className;
+    public heroType primaryStat;
     [Header("Base stats")]
+    public int basePower; 
     public int baseStrength;
     public int baseAgility;
     public int baseIntelligence;
     public int baseHealth;
     public int baseArmor;
+    
 
 
     [Header("Growths")]
+    public float powerGrowth;
     public float strengthGrowth;
     public float agilityGrowth;
     public float intelligenceGrowth;
     public float healthGrowth;
     public float armorGrowth;
 
+    
 
-    public statsStruct getStats( int level)
+
+    public Stats getStats( int level)
     {
-        statsStruct baseStats = new statsStruct(baseStrength,baseAgility,baseIntelligence,baseHealth,baseArmor);
-        statsStruct levelBonus = new statsStruct(strengthGrowth, agilityGrowth, intelligenceGrowth, healthGrowth, armorGrowth, level);
+        Stats baseStats = new Stats(basePower,baseStrength,baseAgility,baseIntelligence,baseHealth,baseArmor);
+        Stats levelBonus = new Stats(powerGrowth, strengthGrowth, agilityGrowth, intelligenceGrowth, healthGrowth, armorGrowth, level);
         return baseStats + levelBonus;
     }
 
@@ -33,6 +40,12 @@ public class UnitClass : ScriptableObject
 }
 
 
-
+public enum heroType
+{
+    Strength,
+    Agility,
+    Intelligence,
+    Special
+}
 
 
