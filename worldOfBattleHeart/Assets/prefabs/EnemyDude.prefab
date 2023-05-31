@@ -111,9 +111,9 @@ GameObject:
   - component: {fileID: 4816268169445591235}
   - component: {fileID: 4816268169445591244}
   - component: {fileID: 4816268169445591245}
-  - component: {fileID: 5706004985141459051}
   - component: {fileID: 3470611811797135536}
   - component: {fileID: 5706004985141459052}
+  - component: {fileID: 18955286506967359}
   m_Layer: 0
   m_Name: EnemyDude
   m_TagString: enemy
@@ -224,20 +224,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5706004985141459051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4816268169445591246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e0c8cdf5ecf9494a897ef86a7bd18ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitClass: {fileID: 11400000, guid: 9dbd616a0dc924bddb3186543b6c60c0, type: 2}
-  currentLevel: 1
 --- !u!114 &3470611811797135536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +249,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
+  shield: 0
   maxHealth: 0
+  armor: 0
+  magicResist: 0
+--- !u!114 &18955286506967359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4816268169445591246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14d0c192c95b433d865cf9168379214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitClass: {fileID: 11400000, guid: a12ff4293c3a54a029e31af7d59635c0, type: 2}
+  currentLevel: 1
 --- !u!1 &5047632999378569581
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +294,7 @@ RectTransform:
   m_GameObject: {fileID: 5047632999378569581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.07, y: 0.3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7427458962364534628}
@@ -368,9 +371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slideBar: {fileID: 1830398603876804325}
-  highHealth: {r: 0.26138735, g: 1, b: 0, a: 1}
-  midHealth: {r: 1, g: 0.80399525, b: 0, a: 1}
-  lowHealth: {r: 1, g: 0, b: 0, a: 1}
+  highHealth: {r: 0.6509434, g: 0.10216549, b: 0, a: 1}
+  midHealth: {r: 0.6509804, g: 0.10196079, b: 0, a: 1}
+  lowHealth: {r: 0.6509804, g: 0.10196079, b: 0, a: 1}
 --- !u!1 &5551280367889589797
 GameObject:
   m_ObjectHideFlags: 0

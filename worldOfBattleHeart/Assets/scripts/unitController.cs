@@ -27,19 +27,22 @@ public class unitController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (navi.remainingDistance < 1) moveCommand = false;
         timeSinceLastAttack += Time.deltaTime;
         if(target != null && !moveCommand)
         {
-            navi.SetDestination(target.position);
+            
             if (Vector3.Distance(transform.position, target.position) < attackRange)
             {
+                navi.Stop();
                 if (timeSinceLastAttack > attackTime)
                 {
                     timeSinceLastAttack = 0;
                     target.GetComponent<Health>().takeDamage(damage, Health.DamageType.physical);
                 }
 
+            } else {
+                navi.SetDestination(target.position);
             }
         }
         

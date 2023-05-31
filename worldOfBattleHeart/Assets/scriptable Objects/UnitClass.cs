@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "newClass", menuName = "ScriptableObjects/newClass")]
 public class UnitClass : ScriptableObject
 {
-    
+    public Sprite classImage;
     public string className;
     public heroType primaryStat;
     [Header("Base stats")]

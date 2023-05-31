@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2aa584d9582d43bc82b639bb16f7a39, type: 3}
   m_Name: warrior
   m_EditorClassIdentifier: 
+  classImage: {fileID: 21300000, guid: fc8295232e0133943a45c03af7ac1958, type: 3}
   className: Warrior
+  primaryStat: 0
+  basePower: 1
   baseStrength: 5
   baseAgility: 2
   baseIntelligence: 1
   baseHealth: 100
   baseArmor: 5
+  powerGrowth: 0
   strengthGrowth: 1.5
   agilityGrowth: 1.2
   intelligenceGrowth: 1

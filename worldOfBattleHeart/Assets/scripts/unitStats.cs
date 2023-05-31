@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class unitStats : MonoBehaviour
 {
     Health healthScript;
@@ -34,6 +34,10 @@ public class unitStats : MonoBehaviour
 
     }
    
+
+    public Sprite getClassImage() {
+        return unitClass.classImage;
+    }
     // Update is called once per frame
     void Update()
     {

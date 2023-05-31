@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2aa584d9582d43bc82b639bb16f7a39, type: 3}
   m_Name: testEnemy
   m_EditorClassIdentifier: 
-  className: 
+  classImage: {fileID: 0}
+  className: Enemy
   primaryStat: 0
-  basePower: 0
-  baseStrength: 0
-  baseAgility: 0
-  baseIntelligence: 0
-  baseHealth: 0
-  baseArmor: 0
+  basePower: 5
+  baseStrength: 5
+  baseAgility: 5
+  baseIntelligence: 5
+  baseHealth: 1
+  baseArmor: 1
   powerGrowth: 0
-  strengthGrowth: 0
-  agilityGrowth: 0
-  intelligenceGrowth: 0
-  healthGrowth: 0
-  armorGrowth: 0
+  strengthGrowth: 1
+  agilityGrowth: 1
+  intelligenceGrowth: 1
+  healthGrowth: 1
+  armorGrowth: 1
