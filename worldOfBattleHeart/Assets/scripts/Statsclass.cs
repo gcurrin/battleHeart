@@ -6,7 +6,7 @@ public class Statsclass : MonoBehaviour {
 
 }
 
-
+[System.Serializable]
 public struct Stats
 {
     //Stats that come from class.

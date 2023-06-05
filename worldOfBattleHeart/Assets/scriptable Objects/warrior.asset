@@ -15,12 +15,30 @@ MonoBehaviour:
   classImage: {fileID: 21300000, guid: fc8295232e0133943a45c03af7ac1958, type: 3}
   className: Warrior
   primaryStat: 0
-  basePower: 1
-  baseStrength: 5
-  baseAgility: 2
-  baseIntelligence: 1
-  baseHealth: 100
-  baseArmor: 5
+  baseStats:
+    power: 1
+    strength: 5
+    agility: 2
+    intelligence: 1
+    health: 100
+    armor: 5
+    magicResist: 0
+    critChance: 0
+    dodgeChance: 0
+    cooldown: 0
+    statusResist: 0
+  Growths:
+    power: 0
+    strength: 0
+    agility: 0
+    intelligence: 0
+    health: 0
+    armor: 0
+    magicResist: 0
+    critChance: 0
+    dodgeChance: 0
+    cooldown: 0
+    statusResist: 0
   powerGrowth: 0
   strengthGrowth: 1.5
   agilityGrowth: 1.2
